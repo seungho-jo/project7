@@ -12,7 +12,7 @@ body {
 .section .info {
 	width: 600px;
 	margin-top: 20px;
-	height : 500px;
+	height : 300px;
 	float : left;
 }
 
@@ -107,13 +107,6 @@ section #board #list ul li img:hover {
 	cursor: pointer;
 }
 
-section #board img {
-	width: 203px;
-	height: 210px;
-}
-#subtitle{
-	
-}
 .accordion {
 	background-color: #ffffff;
 	cursor: pointer;
@@ -148,17 +141,16 @@ section #board img {
 #panel {
 	border : 1px solid #f5f5f5;	
 }
-.items li{
-	list-style :none;
-}
-.panel img{
-	width : 5px;
-	border: solid 1px red;
-	float : right;
-}
 .items {
 	float : left;
 }
+.items li{
+	list-style :none;
+}
 .items .b{
 	font-size : 12px;
+}
+#panel img{
+	width : 87px;
+	margin-left : 270px;
 }
