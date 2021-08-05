@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+*{
+	margin : 0;
+	height : 0;
+	font-family : "Open-Sans";
+	text-decoration : none;
+}
+
+section{
+	width : 100%;
+	height: 100vh;
+	overflow : hidden;
+	display : flex;
+	justify-content: center;
+	align-items : center;
+}
+
+#divScrollMain video{
+	position : absolute;
+	left : 0;
+	top : 0;
+	width : 100%;
+	height : 100%;
+	object-fit : cover;
+	z-index : -1;
+}
+
+.UbtnOBtn [type="button"]{
+	position : relative;
+	top : 40px;
+	width : 170px;
+	height : 30px;
+	font-size : 20px;
+	border : 0px;
+	background : #f7e600;
+	color : white;
+}
+
+.UbtnOBtn [type="button"]:hover{
+	box-shadow: inset 0 0 0 0 #f7e600;
+	border-bottom : 2px solid red;
+	color : red;
+
+}
+
+#divScrollMain img{
+	position : relative;
+	z-index : 3;
+	width : 150px;
+	height : 75px;
+	top : 120px;
+}
+form {
+	border : 1px solid #BDBDBD;
+	border-radius: 10px;
+	height : 500px;
+	width:450px;
+	text-align :center;
+	background: #f7e600;
+}
+.IdPass{
+	position : relative;
+	top : 150px;
+}
+
+.IdPass .id{
+	margin : 0px auto;
+	width:350px;
+	height:40px;
+}
+
+.IdPass .pass{
+	margin : 0px auto;
+	padding-top:10px;
+	width:350px;
+	height:40px;
+}
+
+
+/* id,pass 입력창 길이*/
+.IdPass .id [name="id"], .pass [name="pass"]{
+	border : 3px solid #BDBDBD;
+	border-radius: 10px;
+	width:260px;
+	height:32px;
+}
+
+#button{
+	border : 3px solid black;
+	border-radius: 10px;
+	font-size : 20px;
+	color : white;
+	background : black;
+	cursor : pointer;
+	width:260px;
+	height:32px;
+	margin : 10px;
+	box-shadow: inset 0 0 0 0 #1481ba;
+}
+
+#button:hover{
+	box-shadow: inset  100vmax 0 0 0 red; 
+}
+
+.SchPart{
+	display : block;
+	margin-top : 20px;
+	height : 325px;
+}
+	
+
+.SchPart .idSch{
+	font-size : 12px;
+	margin : 40px 20px 0;
+	position : relative;
+	top : 270px;
+	right : -69px;
+	color : black;
+}
+.idSch:hover{
+	color : red;
+}
+
+.SchPart .pwSch{
+	font-size : 12px;
+	margin : 40px 0 0 20px;
+	position : relative;
+	top : 270px;
+	right : -30px;
+	color : black;
+}
+
+.pwSch:hover{
+	color : red;
+}
+
+.content a, span {
+	position : relative;
+	top : 300px;
+	z-index : 4;
+	font-size : 12px;
+}
