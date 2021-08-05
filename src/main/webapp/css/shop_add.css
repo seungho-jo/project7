@@ -1,0 +1,61 @@
+@charset "UTF-8";
+html,body{
+	margin : 0;
+	background-color : #fafafa;
+}
+a{
+	text-decoration : none;
+	color : black;
+}
+nav#img{
+	background-image : url("../img/img6.jpg");
+	background-size : cover;
+	height : 250px;
+	color : white;
+	font-size : 50px;
+	text-align : center;
+	line-height : 250px;
+}
+section{
+	min-height : 500px;
+	width : 1020px;
+	margin : 0 auto;
+}
+section nav#side{
+	float : left;
+	width : 150px;
+	min-height : 500px;
+}
+section nav#side ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-top : 30px;
+}
+section nav#side ul li{
+	font-size : 20px; 
+	height : 70px;
+	line-height : 70px;
+	text-align : center;
+}
+section nav#side ul li:hover{
+	background-color : rgba(0,0,0,0.1);
+}
+section #content{
+	float : left;
+	width : 718px;
+	min-height : 500px;
+}
+section #content table{
+	padding-top : 50px;
+	padding-left : 50px;
+}
+section #content table tr{
+	height : 50px;
+	line-height : 50px;
+}
+section #content table tr th{
+	text-align : left;
+}
+section #content table tr td{
+	padding-left : 30px;
+}

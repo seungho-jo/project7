@@ -10,7 +10,7 @@
 <script src="https://kit.fontawesome.com/450c3e4f96.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/main_category.css" />
+<link rel="stylesheet" href="css/main_category.css" />
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
@@ -49,5 +49,5 @@
 <script type="text/javascript">
 
 </script>
-<script type="text/javascript" src="../js/main_category.js"></script>
+<script type="text/javascript" src="js/main_category.js"></script>
 </html>

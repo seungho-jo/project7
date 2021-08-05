@@ -22,7 +22,7 @@ header #top #btn{
 	float : right;
 	line-height : 100px;
 }
-header #top #btn button:first-child{
+header #top #btn button:nth-child(1){
 	width : 150px;
 	height : 40px;
 	background-color : #f7e600;
@@ -33,7 +33,7 @@ header #top #btn button:first-child{
 	border-radius : 10%;
 	margin : 0 5px; 
 }
-header #top #btn button:last-child{
+header #top #btn button:nth-child(2){
 	width : 130px;
 	height : 40px;
 	background-color : #f7e600;
