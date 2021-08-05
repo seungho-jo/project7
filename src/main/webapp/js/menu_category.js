@@ -11,4 +11,6 @@ for(var idx=0;idx<shop_list.length;idx++){
 		}
 });
 }
-
+function goPage(){
+	location.href = "storemenu.jsp";
+}

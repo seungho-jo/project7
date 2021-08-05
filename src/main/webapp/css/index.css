@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.shop_add {
+	background: url('../img/tap.png') no-repeat -145px -1px;
+	width: 30px;
+	height: 36px;
+	position : absolute;
+	bottom : 7%;
+	right : 7%;
+}
+.delivery {
+	background: url('../img/tap.png') no-repeat -572px 0;
+	width: 32px;
+	height: 38px;
+	position : absolute;
+	bottom : 7%;
+	right : 7%;
+}
+.order {
+	background: url('../img/tap.png') no-repeat -429px -2px;
+	width: 32px;
+	height: 33px;
+	position : absolute;
+	bottom : 7%;
+	right : 7%;
+}
+.menu {
+	background: url('../img/tap.png') no-repeat -286px -2px;
+	width: 32px;
+	height: 34px;
+	position : absolute;
+	bottom : 7%;
+	right : 7%;
+}
+.review {
+	background: url('../img/tap.png') no-repeat -2px -1px;
+	width: 28px;
+	height: 35px;
+	position : absolute;
+	bottom : 7%;
+	right : 7%;
+}
+html,body{
+	margin : 0;
+	background-color : #fafafa;
+}
+nav{
+	background-image : url("../img/img6.jpg");
+	background-size : cover;
+	height : 250px;
+	color : white;
+	font-size : 50px;
+	text-align : center;
+	line-height : 250px;
+}
+section{
+	min-height : 750px;
+	width : 1020px;
+	margin : 0 auto;
+}
+section .sel{
+	display : inline-block;
+	border : 0.5px solid #d9d9d9;
+	width : 290px;
+	height : 300px;
+	margin : 50px 22px 20px 22px;
+	position : relative;
+	background-color : white;
+	cursor : pointer;
+}
+section .sel .title{
+	position : absolute;
+	top: 7%;
+    left: 7%;
+    color: #333;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: '맑은고딕', malgun gothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,sans-serif;
+}

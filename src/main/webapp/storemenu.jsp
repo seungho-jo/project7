@@ -37,11 +37,12 @@ $(document).ready(function() {
 
 </head>
 <body>
+	<jsp:include page="header.jsp"></jsp:include>
 	<div class="section">
 		<div class="info">
 			<table id="storeinfo">
 				<tr>
-					<td colspan="2"><span style="font-size:15px">멕시카나-부천북부점</span></td>
+					<td colspan="2"><span style="font-size:15px">멕시카나</span></td>
 				</tr>
 				<tr>
 					<td rowspan="5" style="border-right: hidden" width="100px"><img src="img/info.JPG"></td>
@@ -134,9 +135,7 @@ $(document).ready(function() {
 			</div>
 		</section>
 </div>
-
-
-		
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 <script type="text/javascript" src="js/storemenu.js"></script>
 </html>

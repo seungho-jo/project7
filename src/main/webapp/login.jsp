@@ -23,7 +23,7 @@
 		<input type = "button" value = "사용자"/>
 		<input type = "button" value = "사장님"/>
 		</div>
-		<img src = "img/입으로이미지.png" alt="">
+		<img src = "img/title2.PNG" alt="">
 		<video src = "video/shinsegaeFood.mp4" autoplay muted loop></video>
 			<div class = "IdPass">
 				<div class = "id"><input type="text" name = "id" placeholder="아이디를 입력하세요" maxlength="50">

@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="../css/menu_category.css" />
+<link rel="stylesheet" href="css/menu_category.css" />
 <script src="https://kit.fontawesome.com/4849ba1eab.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,7 +37,7 @@
 			<%if(idx%2==0) {%>
 				<div class="category_menu">
 			<%} %>
-			<div class="shop_list">
+			<div class="shop_list" onclick="goPage()">
 				<i class="fas fa-utensils"></i>
 				<p><%=slist.get(idx).getShopName() %></p>
 			</div>
@@ -49,5 +49,5 @@
 	</section>
 	<jsp:include page="footer.jsp"></jsp:include>
 </body>
-<script type="text/javascript" src="../js/menu_category.js"></script>
+<script type="text/javascript" src="js/menu_category.js"></script>
 </html>
