@@ -29,7 +29,7 @@
 			<form id="frm" action="shop_delProc.jsp" method="post">
 				<p align="center">가게 삭제</p>
 				<span>비밀번호</span> <input id="pass" type="password" name="pass" placeholder="비밀번호를 입력하세요"><br>
-				<input id="btn" type="button" value="신청">
+				<input id="del1" type="button" value="신청">
 			</form>
 		</div>
 	</section>
