@@ -1,21 +1,33 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"   %>
+    pageEncoding="UTF-8"   
+    import = "ceo.*"
+    import = "Member.*"
+%>
 <%
 	request.setCharacterEncoding("utf-8");
 	String path = request.getContextPath();
 	String id = request.getParameter("id");
 	String pass = request.getParameter("pass");
+	String checked = request.getParameter("checked");
+	System.out.println(checked);
 	String msg = "로그인 실패";
 	String url = "login.jsp";
-	if(id!=null&&pass!=null){
-		if(id.equals("himan")&&pass.equals("11")){
+	if(checked!=null){
+		MemberDao dao = new MemberDao();
+		Member m = dao.login(id, pass,checked);
+		if(id.equals(m.getId())&&pass.equals(m.getPass())){
 			msg = "로그인 성공!";
-			url = "main_category.jsp";
-			session.setAttribute("idkey", id);
-		}else if(id.equals("ceo")&&pass.equals("22")){
-			msg = "사장님 반갑습니다!!";
-			url = "index.jsp";
-			session.setAttribute("idkey", id);
+			if(m.getCeo_ckeck().equals("Y")){
+				url = "index.jsp";
+				session.setAttribute("idkey", id);
+				session.setAttribute("ceo_num", m.getCeo_num());
+				session.setAttribute("bs_name", m.getBs_name());
+				session.setAttribute("ceo_check", m.getCeo_ckeck());
+			}else if(m.getCeo_ckeck().equals("N")){
+				url = "main_category.jsp";
+				session.setAttribute("idkey", id);
+				session.setAttribute("ceo_check", m.getCeo_ckeck());
+			}
 		}
 	}
 %>     

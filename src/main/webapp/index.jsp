@@ -5,6 +5,8 @@
 <%
 	request.setCharacterEncoding("utf-8");
 	String path = request.getContextPath();
+	long test = (long)session.getAttribute("ceo_num");
+	System.out.println(test);
 %>     
     
 <!DOCTYPE html>

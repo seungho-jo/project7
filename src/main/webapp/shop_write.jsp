@@ -1,8 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import = "java.util.*"
+%>
 <%
 	request.setCharacterEncoding("utf-8");
 	String path = request.getContextPath();
+	long ceo_num = (long)session.getAttribute("ceo_num");
+	String bs_name = (String)session.getAttribute("bs_name");
+	StringBuffer ceo_numS = new StringBuffer();
+	ceo_numS.append(Long.toString(ceo_num));
+	ceo_numS.insert(3,"-");
+	ceo_numS.insert(6,"-");
 %>     
     
 <!DOCTYPE html>
@@ -40,8 +48,8 @@
 						<tr><th>영업시간</th><td><input type="time" name="time1">~<input type="time" name="time2"></td></tr>
 						<tr><th>카테고리</th><td><input type="radio" name="category" value="ck">치킨<input type="radio" name="category" value="cf">중국집<input type="radio" name="category" value="wf">피자/양식<br>
 						<input type="radio" name="category" value="kf">한식<input type="radio" name="category" value="jf">일식<input type="radio" name="category" value="sb">분식</td></tr>
-						<tr><th>상호명</th><td>****</td></tr>
-						<tr><th>사업자번호</th><td>123-45-67890</td></tr>
+						<tr><th>상호명</th><td><%=bs_name%></td></tr>
+						<tr><th>사업자번호</th><td><%=ceo_numS %></td></tr>
 						<tr><td colspan="2"><input id="btnss" type="button" value="등록"></td></tr>
 					</table>
 				</form>

@@ -20,8 +20,9 @@
 		<form action="loginProc.jsp" name = "loginInfo" onsubmit = "return checkValue()"> 
 		<div id = "divScrollMain">
 		<div class = "UbtnOBtn">
-		<input type = "button" value = "사용자"/>
-		<input type = "button" value = "사장님"/>
+		<input class="ceo_check" type = "button" value = "사용자"/>
+		<input class="ceo_check" type = "button" value = "사장님"/>
+		<input id="checked" name="checked" type="hidden" value="">
 		</div>
 		<img src = "img/title2.PNG" alt="">
 		<video src = "video/shinsegaeFood.mp4" autoplay muted loop></video>
@@ -38,7 +39,7 @@
 			<a class = "pwSch" href ="pwSch.jsp">비밀번호찾기</a>
 			
 			<div class = "content">
-			<span>아직 회원이 아니라면?</span><a href = "join">회원가입 하러 가기</a>
+			<span>아직 회원이 아니라면?</span><a href = "join.jsp">회원가입 하러 가기</a>
 			</div>
 		</div>
 		</div>

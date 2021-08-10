@@ -1,8 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+	import = "ceo.*"    
+%>
 <%
 	request.setCharacterEncoding("utf-8");
 	String path = request.getContextPath();
+	String id = (String)session.getAttribute("idkey");
+	Shop sp = new Shop();
+	Dao dao = new Dao();
+	sp = dao.shopInfo(id);
+	StringBuffer ceo_numS = new StringBuffer();
+	ceo_numS.append(Long.toString(sp.getCeo_num()));
+	ceo_numS.insert(3,"-");
+	ceo_numS.insert(6,"-");
 %>     
     
 <!DOCTYPE html>
@@ -27,13 +37,13 @@
 		</nav>
 		<div id="content">
 			<table>
-				<tr><th>* 가게명</th><td>만땅치킨-강남점</td></tr>
-				<tr><th>* 가게주소</th><td>서울 서초구 서초동 1321-6 서초동아타워 지하1층</td></tr>
-				<tr><th>* 영업시간</th><td>09:00 - 20:30</td></tr>
-				<tr><th>* 전화번호</th><td>050352915808</td></tr>
-				<tr><th>* 상호명</th><td>초원F&B(에프앤비)</td></tr>
-				<tr><th>* 사업자등록번호</th><td>416-23-62398</td></tr>
-				<tr><th>* 판매종류</th><td>치킨</td></tr>
+				<tr><th>* 가게명</th><td><%=sp.getShop_name() %></td></tr>
+				<tr><th>* 가게주소</th><td><%=sp.getShop_addr() %></td></tr>
+				<tr><th>* 영업시간</th><td><%=sp.getOpenTime() %> - <%=sp.getEndTime() %></td></tr>
+				<tr><th>* 전화번호</th><td><%=sp.getShop_phone() %></td></tr>
+				<tr><th>* 상호명</th><td><%=sp.getBs_name() %></td></tr>
+				<tr><th>* 사업자등록번호</th><td><%=ceo_numS %></td></tr>
+				<tr><th>* 판매종류</th><td><%=sp.getCategory() %></td></tr>
 			</table>
 		</div>
 	</section>

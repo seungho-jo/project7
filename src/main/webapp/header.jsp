@@ -4,6 +4,7 @@
 	request.setCharacterEncoding("utf-8");
 	String path = request.getContextPath();
 	String id = (String)session.getAttribute("idkey");
+	String ceo_check = (String)session.getAttribute("ceo_check");
 %>    
 <!DOCTYPE html>
 <html>
@@ -16,19 +17,19 @@
 <body>
 	<header>
 		<div id="top">
-			<%if(id==null||id.equals("himan")){%>
+			<%if(ceo_check==null||ceo_check.equals("N")){%>
 			<a href="main_category.jsp"><img id="title" src="img/title2.PNG"></a>
-			<%}else if(id.equals("ceo")){ %>
+			<%}else if(ceo_check.equals("Y")){ %>
 			<a href="index.jsp"><img id="title" src="img/title2.PNG"></a>
 			<%} %>
 			<div id="btn">
-				<%if(id==null){%>
+				<%if(ceo_check==null){%>
 				<button onclick="move()">로그인</button>
 				<button>주문표</button>
-				<%}else if(id.equals("himan")){ %>
+				<%}else if(ceo_check.equals("N")){ %>
 				<button onclick="back()">로그아웃</button>
 				<button>주문표</button>
-				<%}else if(id.equals("ceo")){ %>
+				<%}else if(ceo_check.equals("Y")){ %>
 				<button onclick="back()">로그아웃</button>
 				<%} %>
 			</div>
