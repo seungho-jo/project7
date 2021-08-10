@@ -5,7 +5,7 @@ public class Member {
 	private String pass;
 	private String name;
 	private String ceo_ckeck;
-	private int ceo_num;
+	private long ceo_num;
 	private String bs_name;
 	public Member() {
 		super();
@@ -44,10 +44,10 @@ public class Member {
 	public void setCeo_ckeck(String ceo_ckeck) {
 		this.ceo_ckeck = ceo_ckeck;
 	}
-	public int getCeo_num() {
+	public long getCeo_num() {
 		return ceo_num;
 	}
-	public void setCeo_num(int ceo_num) {
+	public void setCeo_num(long ceo_num) {
 		this.ceo_num = ceo_num;
 	}
 	public String getBs_name() {

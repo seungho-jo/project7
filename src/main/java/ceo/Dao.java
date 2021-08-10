@@ -24,7 +24,7 @@ public class Dao {
 			pstmt.setString(2, m.getPass());
 			pstmt.setString(3, m.getName());
 			pstmt.setString(4, m.getCeo_ckeck());
-			pstmt.setInt(5, m.getCeo_num());
+			pstmt.setLong(5, m.getCeo_num());
 			pstmt.setString(6, m.getBs_name());
 			pstmt.setString(7, m.getId());
 			pstmt.executeUpdate();
